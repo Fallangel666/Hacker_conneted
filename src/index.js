@@ -5,7 +5,7 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import './index.css';
-import App from './App';
+import Home from './Home';
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -26,8 +26,12 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
+<<<<<<< HEAD
     <RouterProvider router={router} />
     <App />
+=======
+    <Home />
+>>>>>>> 817492a42c5197a1dd922b509826c32f6862a477
   </React.StrictMode>
 );
 
