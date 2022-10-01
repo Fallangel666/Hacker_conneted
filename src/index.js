@@ -8,31 +8,29 @@ import './index.css';
 import Home from './Home';
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import About from './About'
+import Search from './Search'
+
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Root />,
-    loader: rootLoader,
+    element: <Home />,
     children: [
       {
-        path: "team",
-        element: <Team />,
-        loader: teamLoader,
+        path: "about",
+        element: <About />,
       },
+      {
+        path: "search",
+        element: <Search />
+      }
     ],
   },
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <React.StrictMode>
-<<<<<<< HEAD
-    <RouterProvider router={router} />
-    <App />
-=======
-    <Home />
->>>>>>> 817492a42c5197a1dd922b509826c32f6862a477
-  </React.StrictMode>
+  <RouterProvider router={router} />
 );
 
 // If you want to start measuring performance in your app, pass a function
