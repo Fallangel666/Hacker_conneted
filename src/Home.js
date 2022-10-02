@@ -6,10 +6,23 @@ function Home() {
   return (
     <div className="Home">
       <header className="App-header">
-        <h1 id="title">HACKER CONNECTED</h1>
+        <ul id="navbar">
+          <a href="">Home</a>
+          <a href="">About</a>
+          <a href="">Sign In</a>
+        </ul>
         <div>
-          <nav><a>Home</a></nav>
-          <nav><a>About</a></nav>
+          <img id="logo"></img>
+          <h1 id="title">HACKER CONNECTED</h1>
+        </div>
+        <div id="searchbar">
+          <p>
+            What are you looking for?
+            <form id="">
+              <input></input>
+              <button>Search</button>
+            </form>
+          </p>
         </div>
       </header>
     </div>
