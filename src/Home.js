@@ -15,12 +15,14 @@ function Home() {
           <img id="logo"></img>
           <h1 id="title">HACKER CONNECTED</h1>
         </div>
-        <div>
-          <p>What are you looking for?</p>
-          <form id="searchbar">
-            <input></input>
-            <button>Search</button>
-          </form>
+        <div id="searchbar">
+          <p>
+            What are you looking for?
+            <form id="">
+              <input></input>
+              <button>Search</button>
+            </form>
+          </p>
         </div>
       </header>
     </div>

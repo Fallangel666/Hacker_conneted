@@ -1,16 +1,34 @@
 /* temporary [DELETE] */
 * {
-  border: 1px solid black;
+  /* border: 1px solid white; */
+  background-color: #454955;
+
 }
 
 #title {
-  text-align: right;
+  text-align: center;
+  color: #0D0A0B;
+  border-radius: 15px;
+  margin-top: 10%;
+  border: 1px solid black;
+  margin-left: 50%;
+  background-color: #A9FBD7;
 }
 
 #navbar {
   position: fixed;
-  text-align: center;
-  top: 0;
-  width: 100%;
   list-style-type: none;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: #A9FBD7;
+  margin-top: 2%;
+  margin-left: 77%;
+}
+
+#searchbar {
+  border: 1px solid white;
+  margin-top: 10%;
+  text-align: right;
+  color: #FF9B71;
+  border-radius: 15px;
 }
