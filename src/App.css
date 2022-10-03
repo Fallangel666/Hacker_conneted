@@ -7,7 +7,6 @@ body {
   color: #0d0a0b;
   border-bottom-left-radius: 15px;
   border-top-left-radius: 15px;
-  margin-top: 15px;
   border: 1px solid black;
   margin-left: 45%;
   background-color: white;
@@ -15,13 +14,9 @@ body {
 }
 
 #navbar {
-  
-}
-
-#searchbar {
-  margin-top: 10%;
-  text-align: right;
-  color: #ff9b71;
+ position: fixed;
+ width: 90%; 
+ background-color: #454955;
 }
 
 .Home {
@@ -29,6 +24,7 @@ body {
   max-height: 2000px;
   min-width: 500px;
   max-width: 2000px;
+  background-color: #454955;
 }
 
 .home-header {
