@@ -1,3 +1,5 @@
+This project is with the intentions of a hackers social media. where other hackers aswell as companies can contact and aquire hackers for their web /software needs.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
