@@ -40,7 +40,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
 
-app.use("/profile", userRoute)
-app.use("/aut", autRoute)
+App.use("/profile", userRoute)
+App.use("/aut", autRoute)
 
 module.exports=router
