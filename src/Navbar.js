@@ -3,7 +3,7 @@ function Navbar() {
         <div id="navbar">
           <nav class="navbar navbar-expand-lg bg-light">
             <div class="container-fluid">
-              <a class="navbar-brand" href="#">
+              <a class="navbar-brand" href="">
                 <img src="./public/hackerclogo.jpg" alt="hacker logo"></img>
               </a>
               <button

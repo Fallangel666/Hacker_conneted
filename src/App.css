@@ -2,29 +2,29 @@ body {
   background-color: #454955;
 }
 
-#title {
-  text-align: center;
-  color: #0d0a0b;
-  border-bottom-left-radius: 15px;
-  border-top-left-radius: 15px;
-  border: 1px solid black;
-  margin-left: 45%;
-  background-color: white;
-  padding-left: 4px;
-}
-
-#navbar {
- position: fixed;
- width: 90%; 
- background-color: #454955;
-}
-
 .Home {
   min-height: 1000px;
   max-height: 2000px;
   min-width: 500px;
   max-width: 2000px;
   background-color: #454955;
+}
+
+#navbar {
+  position: fixed;
+  width: 90%;
+  background-color: #454955;
+}
+
+#title {
+  text-align: center;
+  color: #0d0a0b;
+  border-bottom-left-radius: 15px;
+  border-top-left-radius: 15px;
+  border: 1px solid black;
+  margin-top: 45px;
+  background-color: white;
+  padding-left: 4px;
 }
 
 .home-header {
@@ -51,4 +51,3 @@ body {
   text-align: center;
   padding-top: 10px;
 }
-
