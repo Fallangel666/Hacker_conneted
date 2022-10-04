@@ -1,7 +1,7 @@
 import express from "express"
 
-const app = express()
+const App = express()
 
-app.use("*", (req, res) => res.status(404).json({ error: "Not Found"}))
+App.use("*", (req, res) => res.status(404).json({ error: "Not Found"}))
 
-export default app
+export default App
