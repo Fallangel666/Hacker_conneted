@@ -1,6 +1,5 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom";
-import dotenv from "dotenv";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
 import Home from "./Home";
@@ -9,10 +8,11 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import About from "./About";
 import Search from "./Search";
 
-dotenv.config();
 
-const userRoute = require("./route/profile");
-const autRoute = require("./route/aut");
+const port = process.env.PORT
+
+// const userRoute = require("./route/profile");
+// const autRoute = require("./route/aut");
 
 const router = createBrowserRouter([
   {
@@ -40,7 +40,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
 
-app.use("/profile", userRoute)
-app.use("/aut", autRoute)
+// App.use("/profile", userRoute)
+// App.use("/aut", autRoute)
 
 module.exports=router
