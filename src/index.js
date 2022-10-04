@@ -11,7 +11,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import About from './About'
 import Search from './Search'
 
-const userRoute= require("./route/user")
+const userRoute= require("./route/profile")
 
 
 const router = createBrowserRouter([
@@ -40,5 +40,6 @@ ReactDOM.createRoot(document.getElementById("root")).render(
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
 
-app.use("/apo/user", userRoute)
+app.use("/profile", userRoute)
 
+module.exports=router
