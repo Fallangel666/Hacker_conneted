@@ -12,7 +12,7 @@ import About from './About'
 import Search from './Search'
 
 const userRoute= require("./route/profile")
-
+const autRoute= require("./route/aut")
 
 const router = createBrowserRouter([
   {
@@ -40,6 +40,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
 
-app.use("/profile", userRoute)
+app.use("/api/profile", userRoute)
+app.use("/aut", autRoute)
 
-module.exports=router
+module.exports=routerpw
