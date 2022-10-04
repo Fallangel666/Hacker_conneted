@@ -1,6 +1,6 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom";
-
+import dotenv from "dotenv";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
 import Home from "./Home";
@@ -8,6 +8,8 @@ import reportWebVitals from "./reportWebVitals";
 import "bootstrap/dist/css/bootstrap.min.css";
 import About from "./About";
 import Search from "./Search";
+
+dotenv.config();
 
 const userRoute = require("./route/profile");
 const autRoute = require("./route/aut");
