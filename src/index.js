@@ -20,5 +20,7 @@ ReactDOM.render(
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
 
+// App.use("/profile", userRoute)
+// App.use("/aut", autRoute)
 
-
+module.exports=router
