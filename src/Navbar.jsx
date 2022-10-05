@@ -10,7 +10,7 @@ function NavBar() {
   return (
    
     <Navbar bg="light" expand="lg">
-       <img scr='./public/hackerclogo.jpg' alt='hacker logo' ></img>
+       <img src="/hackerclogo.jpg" alt="hacker logo"></img>
       <Container>
       
         <Navbar.Brand >Hackers Conneted</Navbar.Brand>

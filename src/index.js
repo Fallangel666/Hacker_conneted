@@ -23,4 +23,4 @@ reportWebVitals();
 // App.use("/profile", userRoute)
 // App.use("/aut", autRoute)
 
-module.exports=router
+//module.exports=router

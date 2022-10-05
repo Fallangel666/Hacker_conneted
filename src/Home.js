@@ -1,13 +1,19 @@
 import "./App.css";
-import NavBar from "./Navbar";
+import { BrowserRouter as Router, Link, Route } from "react-router-dom";
+import Navbar from "./Navbar";
+/*
+const React = require('react')
+const Def = require('./default')*/
+
 
 function Home() {
   return (
     <div className="Home">
       <header className="home-header">
-          <NavBar/>
-        <div>
-          <h1 id="title">HACKER CONNECTED</h1>
+        <Navbar />
+
+        <div id="title">
+          <h1>HACKER CONNECTED</h1>
         </div>
         <div id="welcome">
           <h2>Welcome to the social network for hackers!</h2>
