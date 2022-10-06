@@ -1,6 +1,7 @@
 const react = require('react')
 const Def= require('./home')
 
+
 function error404 () {
     <Def>
     <main>

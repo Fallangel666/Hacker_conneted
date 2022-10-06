@@ -1,12 +1,20 @@
-import express from "express"
+import express, { application } from "express"
+import cors from "cors"
 
-const App = express()
+const app = express()
 
-App.use("*", (req, res) => res.status(404).json({ error: "Not Found"}))
+app.use(cors())
+app.use(express.json())
 
-export default App
+app.use("/home", index)
+app.use("*", (req, res) => res.status(404).json({ error: "Not Found"}))
+
+export default app
+
+
 
 import { alignPropType } from "react-bootstrap/esm/types";
+import { Link } from "react-router-dom"
 
 //middleware
 
