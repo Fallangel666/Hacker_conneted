@@ -5,6 +5,7 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import {LinkContainer} from 'react-router-bootstrap';
 //import Home from './Home';
 //import About from './About'
+import "./App.css"
 
 function NavBar() {
   return (
@@ -13,7 +14,7 @@ function NavBar() {
        <img src="/hackerclogo.jpg" alt="hacker logo"></img>
       <Container>
       
-        <Navbar.Brand >Hackers Conneted</Navbar.Brand>
+        <Navbar.Brand className='title'>Hackers Connected</Navbar.Brand>
         
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
@@ -21,11 +22,11 @@ function NavBar() {
           <LinkContainer to="/">
             <Nav.Link >Home</Nav.Link>
             </LinkContainer>
-            <LinkContainer to="/about">
-            <Nav.Link  >About</Nav.Link>
+            <LinkContainer to="/login">
+            <Nav.Link  >Log In</Nav.Link>
             </LinkContainer>
-            <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
+            <NavDropdown title="More" id="basic-nav-dropdown">
+              <NavDropdown.Item href="about">About</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">
                 Another action
               </NavDropdown.Item>

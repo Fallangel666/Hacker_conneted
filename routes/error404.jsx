@@ -1,6 +1,7 @@
 const react = require('react')
 const Def= require('./error')
 
+
 function error404 () {
     <Def>
     <main>
