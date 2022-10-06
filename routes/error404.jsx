@@ -1,5 +1,5 @@
 const react = require('react')
-const Def= require('./home')
+const Def= require('./error')
 
 function error404 () {
     <Def>
@@ -17,4 +17,4 @@ function error404 () {
 }
 
 
-module.exports = error404
+module.exports = error404;

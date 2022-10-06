@@ -1,4 +1,5 @@
 const React = require('react')
+const Def = require('./home')
 
 function Def (html) {
     return (
@@ -29,7 +30,7 @@ function Def (html) {
     )
   }
 
-  module.exports = Def
+  module.exports = Def;
   
 
   
