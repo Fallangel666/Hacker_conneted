@@ -7,7 +7,6 @@ import reportWebVitals from "./reportWebVitals";
 import "bootstrap/dist/css/bootstrap.min.css";
 import About from "./About";
 import Search from "./Search";
-const app = express ()
 
 
 const port = process.env.PORT
@@ -44,8 +43,6 @@ reportWebVitals();
 // App.use("/profile", userRoute)
 // App.use("/aut", autRoute)
 
-app.get('*',(req,res)=>{
-  res.render('error')
-})
-app.listen(process.env.PORT)
+
+
 module.exports=router
