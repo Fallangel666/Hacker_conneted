@@ -1,45 +1,31 @@
-import React from "react";
-import "./index.css";
-import Home from "./Home.js";
+
+import 'bootstrap/dist/css/bootstrap.min.css';
+import ReactDOM from "react-dom/client";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Layout from ".Layout";
+import Home from "./Home";
 import About from "./About";
-import Search from "./Search.js";
+import Search from "./Search";
+import NoPage from ".NoPage";
 
-const port = process.env.PORT;
-
-// const userRoute = require("./route/profile");
-// const autRoute = require("./route/aut");
-
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <Home />,
-    children: [
-      {
-        path: "about",
-        element: <About />,
-      },
-      {
-        path: "search",
-        element: <Search />,
-      },
-    ],
-  },
-]);
-
-ReactDOM.createRoot(document.getElementById("root")).render(
-  <RouterProvider router={router} />
-);
+import * as React from "react";
+import * as ReactDOM from "react-dom";
+import { BrowserRouter } from "react-router-dom";
 
 ReactDOM.render(
-  <BrowserRouter>{<Home />}</BrowserRouter>,
-  document.getElementById("root")
+  <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="about" element={<About />} />
+          <Route path="search" element={<Search />} />
+          <Route path="*" element={<NoPage />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
 );
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+
 reportWebVitals();
 
-// App.use("/profile", userRoute)
-// App.use("/aut", autRoute)
-
-module.exports = router;
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<App />)
