@@ -1,29 +1,27 @@
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
-import {LinkContainer} from 'react-router-bootstrap';
-//import Home from './Home';
+import Container from "react-bootstrap/Container";
+import Nav from "react-bootstrap/Nav";
+import Navbar from "react-bootstrap/Navbar";
+import NavDropdown from "react-bootstrap/NavDropdown";
+import { LinkContainer } from "react-router-bootstrap";
+//import App from './App';
 //import About from './About'
-import "./App.css"
+import "./App.css";
 
 function Navbar() {
   return (
-   
     <Navbar bg="light" expand="lg">
-       <img src="/hackerclogo.jpg" alt="hacker logo"></img>
+      <img src="/hackerclogo.jpg" alt="hacker logo"></img>
       <Container>
-      
-        <Navbar.Brand className='title'>Hackers Connected</Navbar.Brand>
-        
+        <Navbar.Brand className="title">Hackers Connected</Navbar.Brand>
+
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-          <LinkContainer to="/">
-            <Nav.Link >Home</Nav.Link>
+            <LinkContainer to="/">
+              <Nav.Link>App</Nav.Link>
             </LinkContainer>
             <LinkContainer to="/login">
-            <Nav.Link  >Log In</Nav.Link>
+              <Nav.Link>Log In</Nav.Link>
             </LinkContainer>
             <NavDropdown title="More" id="basic-nav-dropdown">
               <NavDropdown.Item href="about">About</NavDropdown.Item>
