@@ -1,7 +1,6 @@
 const React = require('react')
+const home =() =>{
 
-
-function home () {
     return (
       <Def>
             <div href="home" className="Home">
@@ -19,4 +18,4 @@ function home () {
  </Def>
     )
 }
-module.exports= home
+export default home

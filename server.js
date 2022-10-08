@@ -1,24 +1,25 @@
-import express, { application } from "express"
-import cors from "cors"
+import express from "express";
+import bodyParser from 'body-parser';
+import cors from 'cors';
+//sql import
+import dotenv from "dotenv";
+import authroute from './routes/authroute.js'
+import userroute from  './routes/userroute.js'
 
-const app = express()
+//routes
 
-app.use(cors())
-app.use(express.json())
+const app = express();
 
-app.use("/home", index)
-app.use("*", (req, res) => res.status(404).json({ error: "Not Found"}))
+//midware
+app.use (bodyParser.json({limit: '30mb', extended:true}))
+app.use(bodyParser.urlencoded({limit: '30mb', extended:true}))
 
-export default app
+dotenv.config()
 
+//sqldb goes here
 
+//import { alignPropType } from "react-bootstrap/esm/types";
 
-import { alignPropType } from "react-bootstrap/esm/types";
-import { Link } from "react-router-dom"
-
-//middleware
-
-const router = require("express").Router();
-
-
-module.exports = router;
+//toute usage
+app.use('/auth', authroute)
+app.use('/user', userroute)

@@ -1,18 +1,4 @@
-const router = require("express").router();
-const db = require("../loginapi");
-import { Model } from "sequelize";
+import user from "../loginmodel/user"
 
-router.get("/", (req,res) =>{
-    db.find()
-    .then((routes)=>{
-        res.render("routes", {routes});
-    })
-    .catch((err)=> {
-        console.log(err);
-        res.render("error404")
-    })
-})
-
-
-
-Model.exports= router;
+//get user
+export const getUser = async(req, res)
