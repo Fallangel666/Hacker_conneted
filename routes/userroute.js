@@ -1,8 +1,10 @@
 import express from "express";
-import {getuser} from "../controller/usercon"
+import {deleteUser, getuser, updateUser} from "../controller/usercon"
 
 const router= express.Router();
 
 router.get('/:id', getuser)
+router.put('/:id', updateUser)
+router.delete('/id',deleteUser)
 
-export default router
+export default router;

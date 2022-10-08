@@ -23,3 +23,4 @@ dotenv.config()
 //toute usage
 app.use('/auth', authroute)
 app.use('/user', userroute)
+app.use('/post', postroute)
