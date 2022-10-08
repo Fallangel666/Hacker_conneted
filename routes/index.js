@@ -6,7 +6,7 @@ import app from './app'
 require ('dotenv').config()
 const express = require ('express')
 const error404 = require('./error404')
-const app = express ()
+
 
 app.set('view engine', 'jsx')
 app.engine('jsx', require ('express-react-views').createEngine())
