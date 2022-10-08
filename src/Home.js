@@ -6,7 +6,7 @@ const React = require('react')
 const Def = require('./default')
 
 
-function App() {
+function Home() {
   return (
     <div className="App">
       <header className="App-header">
@@ -23,4 +23,4 @@ function App() {
   );
 }
 
-export default App;
+export default Home;
