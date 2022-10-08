@@ -1,5 +1,5 @@
 import React from 'react';
-const Def = require('./home')
+const Def = require('./home.js')
 
 function Def (html) {
     return (

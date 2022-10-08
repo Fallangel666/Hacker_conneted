@@ -1,6 +1,5 @@
 import "./App.css";
 
-
 function Search() {
   return (
     <div className="Home">

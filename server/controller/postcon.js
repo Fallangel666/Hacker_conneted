@@ -1,4 +1,4 @@
-import post from "../loginmodel/post";
+import post from "../loginmodel/post.js";
 import { Sequelize } from "sequelize";
 
 //create

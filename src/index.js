@@ -1,4 +1,3 @@
-
 import 'bootstrap/dist/css/bootstrap.min.css';
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
@@ -6,6 +5,7 @@ import Layout from "./Layout.js";
 import Home from "./Home.js";
 import About from "./About.js";
 import Search from "./Search.js";
+
 
 
 

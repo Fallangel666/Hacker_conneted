@@ -1,5 +1,8 @@
 import "./App.css";
 
+const React = require('react')
+const Def = require('./default')
+
 function Home() {
   return (
     <div className="Home">

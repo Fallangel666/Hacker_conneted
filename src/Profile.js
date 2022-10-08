@@ -1,6 +1,5 @@
 import "./App.css";
 
-
 function Profile() {
   return (
     <div className="Home">
