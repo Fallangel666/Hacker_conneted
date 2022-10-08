@@ -1,17 +1,8 @@
-import * as React from "react";
-import * as ReactDOM from "react-dom";
-import {
-  createBrowserRouter,
-  RouterProvider,
-  BrowserRouter,
-} from "react-router-dom";
+import React from "react";
 import "./index.css";
-import Home from "./Home";
-import reportWebVitals from "./reportWebVitals";
-import "bootstrap/dist/css/bootstrap.min.css";
+import Home from "./Home.js";
 import About from "./About";
-import Search from "./Search";
-// import app from "../server.js"
+import Search from "./Search.js";
 
 const port = process.env.PORT;
 

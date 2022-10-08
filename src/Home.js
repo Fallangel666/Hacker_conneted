@@ -1,9 +1,8 @@
 import "./App.css";
-import { BrowserRouter as Router, Link, Route } from "react-router-dom";
-import Navbar from "./Navbar";
-/*
+import Navbar from "../src/Navbar";
+
 const React = require('react')
-const Def = require('./default')*/
+const Def = require('./default')
 
 
 function Home() {
