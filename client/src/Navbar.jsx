@@ -10,7 +10,7 @@ import "./App.css";
 function NavBar() {
   return (
     <Navbar bg="light" expand="lg">
-      <img src="/hackerclogo.jpg" alt="hacker logo"></img>
+      <a href="/"><img src="/hackerclogo.jpg" alt="hacker logo"></img></a>
       <Container>
         <Navbar.Brand className="title">Hackers Connected</Navbar.Brand>
 
@@ -20,7 +20,7 @@ function NavBar() {
             <LinkContainer to="/">
               <Nav.Link>Home</Nav.Link>
             </LinkContainer>
-            <LinkContainer to="/login">
+            <LinkContainer to="/Login">
               <Nav.Link>Log In</Nav.Link>
             </LinkContainer>
             <NavDropdown title="More" id="basic-nav-dropdown">

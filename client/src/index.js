@@ -5,6 +5,8 @@ import Layout from "./Layout.js";
 import About from "./About.js";
 import Search from "./Search.js";
 import Home from "./Home.js"
+import Login from "./Login.js"
+import Signup from "./Signup.js";
 
 
 export default function App() {
@@ -15,7 +17,8 @@ export default function App() {
           <Route index element={<Home />} />
           <Route path="about" element={<About />} />
           <Route path="search" element={<Search />} />
-          
+          <Route path="login" element={<Login />}/>
+          <Route path="signup" element={<Signup />}/>
         </Route>
       </Routes>
     </BrowserRouter>
