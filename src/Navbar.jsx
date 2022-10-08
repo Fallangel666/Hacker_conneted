@@ -7,7 +7,7 @@ import {LinkContainer} from 'react-router-bootstrap';
 //import About from './About'
 import "./App.css"
 
-function NavBar() {
+function Navbar() {
   return (
    
     <Navbar bg="light" expand="lg">
@@ -43,4 +43,4 @@ function NavBar() {
   );
 }
 
-export default NavBar;
+export default Navbar;
