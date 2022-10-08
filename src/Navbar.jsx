@@ -7,7 +7,7 @@ import { LinkContainer } from "react-router-bootstrap";
 //import About from './About'
 import "./App.css";
 
-function Navbar() {
+function NavBar() {
   return (
     <Navbar bg="light" expand="lg">
       <img src="/hackerclogo.jpg" alt="hacker logo"></img>
@@ -41,4 +41,4 @@ function Navbar() {
   );
 }
 
-export default Navbar;
+export default NavBar;

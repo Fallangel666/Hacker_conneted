@@ -1,16 +1,16 @@
 import "./App.css";
 import { BrowserRouter as Router, Link, Route } from "react-router-dom";
-import Navbar from "./Layout.js";
+import NavBar from "./Navbar.jsx";
 
-const React = require('react')
-const Def = require('./default')
+// const React = require("react")
+// const Def = require('./default')
 
 
 function Home() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <Navbar />
+    <div className="Home">
+      <header className="Home-header">
+        <NavBar />
 
         <div id="title">
           <h1>HACKER CONNECTED</h1>
