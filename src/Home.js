@@ -1,6 +1,7 @@
 import "./App.css";
-import Navbar from "../src/Navbar";
-
+import { BrowserRouter as Router, Link, Route } from "react-router-dom";
+import Navbar from "./Layout";
+/*
 const React = require('react')
 const Def = require('./default')
 
