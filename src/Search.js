@@ -1,6 +1,5 @@
 import "./App.css";
-import { BrowserRouter as Router, Link, Route } from "react-router-dom";
-import Navbar from "./Navbar";
+import Navbar from "./Layout";
 
 function Search() {
   return (

@@ -1,14 +1,9 @@
-import "./App.css";
-import { BrowserRouter as Router, Link, Route } from "react-router-dom";
-import Navbar from "./Layout";
-/*
 const React = require('react')
-const Def = require('./default')*/
+const home =() =>{
 
-
-function Home() {
-  return (
-    <div className="Home">
+    return (
+      <Def>
+            <div href="home" className="Home">
       <header className="home-header">
         <Navbar />
 
@@ -20,7 +15,7 @@ function Home() {
         </div>
       </header>
     </div>
-  );
+ </Def>
+    )
 }
-
-export default Home;
+export default home
