@@ -1,6 +1,6 @@
 import { Sequelize } from "sequelize";
 
-const postSchema= Sequelize.model({
+const postSchema= Sequelize.Schema({
     userID:{ type:String, require:true},
     desc:String,
     likes:[],
