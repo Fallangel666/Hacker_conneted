@@ -1,0 +1,114 @@
+body {
+  background-color: #454955;
+  font-family: "Roboto", sans-serif;
+}
+
+#Home {
+  min-height: 1000px;
+  max-height: 2000px;
+  min-width: 500px;
+  max-width: 2000px;
+  background-color: #454955;
+}
+
+.navbar {
+  position: fixed;
+  width: 90%;
+  background-color: #454955;
+}
+
+.home-header {
+  background-color: #a9fbd7;
+  margin-left: 5%;
+  margin-right: 5%;
+  border-radius: 15px;
+  min-height: 950px;
+  max-height: 1950px;
+}
+
+#background {
+  background-color: #454955;
+}
+
+#welcome {
+  border: solid white;
+  border-radius: 15px;
+  background-color: white;
+  height: 100px;
+  width: 500px;
+  margin: auto;
+  margin-top: 100px;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.signup-box {
+  width: 360px;
+  height: 720px;
+  margin: auto;
+  background-color: white;
+  border-radius: 3px;
+}
+
+.login-box {
+  width: 360px;
+  height: 280px;
+  margin: auto;
+  padding-top: 100px;
+  border-radius: 3px;
+}
+
+h1 {
+  text-align: center;
+  padding-top: 15px;
+}
+
+h4 {
+  text-align: center;
+}
+
+form {
+  width: 300px;
+  margin-left: 20px;
+}
+
+form label {
+  display: flex;
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+form input {
+  width: 100%;
+  padding: 7px;
+  border: none;
+  border: 1px solid gray;
+  border-radius: 6px;
+  outline: none;
+  
+}
+input[type="button"] {
+  width: 300px;
+  height: 35px;
+  margin-top: 20px;
+  border: none;
+  background-color: #49c1a2;
+  color: white;
+  font-size: 18px;
+}
+p {
+  text-align: center;
+  padding-top: 20px;
+  font-size: 15px;
+}
+.para-2 {
+  text-align: center;
+  color: gray;
+  font-size: 15px;
+  margin-top: -10px;
+  padding-top: 125px;
+}
+.para-2 a {
+  color: #49c1a2;
+}
+
