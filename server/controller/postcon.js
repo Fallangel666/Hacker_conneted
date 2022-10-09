@@ -21,7 +21,7 @@ export const getPost= async(req,res)=>{
         const posted = await post.findByID(id)
         res.status().json(posted)
     } catch(error){
-        res.status().json(error)
+        res.status(500).json(error)
     }
 }
 //update
@@ -34,11 +34,11 @@ export const uPost= async(req,res)=>{
         if(post.userID===userID)
         {
             await post.update({$set:req.body})
-            res.status().json("Updated post")
+            res.status(200).json("Updated post")
         }
     
     } catch(error){
-        res.status().json(error)
+        res.status(500).json(error)
     }
 }
 
@@ -52,11 +52,11 @@ export const dPost= async(req,res)=> {
         if(post.userID===userID)
         {
             await post.delete();
-            res.status().json("post deleted")
+            res.status(200).json("post deleted")
         }
 
     }catch(error){
-        res.status().json(error)
+        res.status(500).json(error)
     }
 
 }
