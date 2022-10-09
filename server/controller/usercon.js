@@ -1,4 +1,4 @@
-import user from "../loginmodel/user"
+import user from "../model/user"
 import bcrypt from bcrypt
 
 //get user

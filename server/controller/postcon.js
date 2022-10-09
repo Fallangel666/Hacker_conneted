@@ -1,5 +1,30 @@
-import post from "../loginmodel/post.js";
-import { Sequelize } from "sequelize";
+const posts = require('express').Router()
+const { Post, MeetGreet, Event, SetTime } = db
+const { Op } = require('sequelize')
+
+
+// FIND ALL POST
+posts.get('/', async (req, res) => {
+    try {
+        const foundPost = await Post.findAll({
+            order: [['available_start_time', 'ASC']],
+            where: {
+                name: { [Op.like]: `%${req.query.name ? req.query.name : ''}%` }
+            }
+        })
+        res.status(200).json(foundBands)
+    } catch (error) {
+        res.status(500).json(error)
+    }
+})
+
+
+
+
+
+
+
+
 
 //create
 export const cPost= async(req,res)=> {
