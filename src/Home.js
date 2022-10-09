@@ -1,4 +1,4 @@
-import "./App.css";
+
 
 const React = require('react')
 const Def = require('./default')

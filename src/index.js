@@ -5,7 +5,7 @@ import Layout from "./Layout.js";
 import Home from "./Home.js";
 import About from "./About.js";
 import Search from "./Search.js";
-
+import "./App.css";
 
 
 

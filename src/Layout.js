@@ -4,6 +4,7 @@ import { Outlet, Link } from "react-router-dom";
 function Layout(){
   return (
     <>
+    <img></img>
       <nav id="navbar">
         <ul>
           <li>
