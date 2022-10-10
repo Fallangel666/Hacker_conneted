@@ -1,10 +1,10 @@
-import post from "../loginmodel/post.js";
+/*import post from "../loginmodel/post.js";
 import { Sequelize } from "sequelize";
-import { BADNAME } from "dns";
-const post = require('express').Router
+import { BADNAME } from "dns";*/
+const posts = require('express').Router
 const db = require('../loginmodel')
 const {post, user}=db
-const {op}= require('sequelize')
+const {Op}= require('sequelize')
 
 
 //create
@@ -18,6 +18,17 @@ const {op}= require('sequelize')
         res.status(404).json(error)
     }
 }*/
+posts.post('/', async (req, res) => {
+    try {
+        const newPost = await Post.create(req.body)
+        res.status(200).json({
+            message: 'Successfully inserted a new post',
+            data: newPost
+        })
+    } catch (error) {
+        res.status(500).json(error)
+    }
+})
 
 
 //get post
@@ -31,7 +42,22 @@ const {op}= require('sequelize')
         res.status(500).json(error)
     }
 }*/
-
+posts.get('/:name', async (req,res) =>{
+    try{
+        const findPosts= await post.findOne({
+            where:{
+                user_id:req.params.name
+            }
+            [{
+                model: user,
+                as:"users"
+            }]
+        })
+        res.status(200).json(findPosts)
+    }catch(error){
+        res.status(500).json(error)
+    }
+})
 
 //update
 /*export const uPost= async(req,res)=>{
@@ -50,6 +76,20 @@ const {op}= require('sequelize')
         res.status(500).json(error)
     }
 }*/
+posts.put('/:id', async (req,res) =>{
+    try{
+        const updatePosts= await posts.update({
+            where:{
+                post_id:req.params.id
+            }
+        })
+        res.status(200).json({
+            message:`Success. Updated user ${updatePosts} .`
+        })
+    }catch(error){
+        res.status(500).json(error)
+    }
+})
 
 
 //delete
@@ -70,19 +110,19 @@ const {op}= require('sequelize')
     }
 
 }*/
-post.delete('/:id', async (req, res) => {
-    try {
-        const deletedPost = await Post.destroy({
-            where: {
-                post_id: req.params.id
+posts.delete('/:id', async (req,res) =>{
+    try{
+        const deletedPost= await posts.destroy({
+            where:{
+                post_id:req.params.id
             }
         })
         res.status(200).json({
-            message: `Successfully deleted ${deletedPost} band(s)`
+            message:`Success. ${deletedPost} was deleted.`
         })
-    } catch (err) {
-        res.status(500).json(err)
+    }catch(error){
+        res.status(500).json(error)
     }
 })
 
-module.exports = post
+module.exports = posts
