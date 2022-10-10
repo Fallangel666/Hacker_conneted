@@ -166,7 +166,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/a
 
 ### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+This section has moved here: [![Netlify Status](https://api.netlify.com/api/v1/badges/3ca8b262-87b1-4cdf-ab83-3acd857291e6/deploy-status)](https://app.netlify.com/sites/hacker-conneted/deploys)
 
 ### `npm run build` fails to minify
 
