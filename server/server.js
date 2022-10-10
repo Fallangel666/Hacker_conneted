@@ -4,6 +4,7 @@ import bodyParser from 'body-parser';
 import dotenv from "dotenv";
 import authroute from './routes/authroute.js'
 import userroute from  '../routes/userroute.js'
+import 
 
 //routes
 
@@ -25,4 +26,4 @@ app.use('/auth', authroute)
 app.use('/user', userroute)
 app.use('/post', postroute)
 
-app.listen(PORT)
+app.listen(process.env.PORT, () =>)
