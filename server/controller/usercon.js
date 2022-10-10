@@ -1,7 +1,12 @@
+<<<<<<< HEAD
+import user from "../model/user"
+import bcrypt from bcrypt
+=======
 const users = require('express').Router
 const db = "../loginmodel"
 const {user}= db
 const {Op} = require('sequelize')
+>>>>>>> d937307ae2452f37c6279ddfbd421cd377ff06e5
 
 
 /*
