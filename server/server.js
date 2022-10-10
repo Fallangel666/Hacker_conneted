@@ -1,31 +1,51 @@
-import express from "express";
-import bodyParser from "body-parser";
+const express = require("express");
+const cors = require("cors")  // install cors
+const bodyParser = require("body-parser");
+var dateFormat = require('dateformat');
 //sql import
-import dotenv from "dotenv";
-import authroute from './routes/authroute.js'
-import userroute from  '../routes/userroute.js'
-import 
-
-//routes
+// import dotenv from "dotenv";
+// import authroute from './routes/authroute.js'
+// import userroute from  '../routes/userroute.js'
 
 const app = express();
-const PORT = process.env.PORT;
-//midware
-app.use(express.json())
-app.use(express.urlencoded({ extended: false }))
+app.set("port", 3001);
 
+app.use(cors())
+app.use(bodyParser.json({ type: "application/json" }));
+app.use(bodyParser.urlencoded({ extended: true }));
 
-dotenv.config();
+const Pool = require("pg").Pool;
+const config = {
+    host: "localhost",
+    user: "Austin",
+    password: "astros5",
+    database: "cubing"
+};
 
-//sqldb goes here
+const pool = new Pool(config);
 
-//import { alignPropType } from "react-bootstrap/esm/types";
+app.post("/add-time", async (req, res) => {
+    const name = req.body.name;
+    const time = req.body.time;
+    // It would be better to set the time server-side
+    const timeStamp = dateFormat(time, dateFormat.masks.isoDateTime)
 
-//toute usage
-app.use("/auth", authroute);
-app.use("/user", userroute);
-app.use("/post", postroute);
+    const template = 'INSERT INTO times(name, time) VALUES($1, $2)'
+    const response = await pool.query(template, [name, timeStamp])
 
-app.listen(PORT, () => {
-  console.log("Running on PORT 3001");
+    res.end()
+});
+
+app.get("/list", async (req, res) => {
+    const template = await pool.query('SELECT * FROM times');
+    res.json({ times: template.rows });
+
+})
+
+app.get("/", (req, res) => {
+    res.json({ message: "We did it!" });
+});
+
+app.listen(app.get("port"), () => {
+    console.log(`Server at: http://localhost:${app.get("port")}/`);
 });
