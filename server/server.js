@@ -1,5 +1,5 @@
 const express = require("express");
-const cors = require("cors")  // install cors
+const cors = require("cors")
 const bodyParser = require("body-parser");
 var dateFormat = require('dateformat');
 //sql import
@@ -43,7 +43,7 @@ app.get("/list", async (req, res) => {
 })
 
 app.get("/", (req, res) => {
-    res.json({ message: "We did it!" });
+    res.json({ message: "It's Working" });
 });
 
 app.listen(app.get("port"), () => {
