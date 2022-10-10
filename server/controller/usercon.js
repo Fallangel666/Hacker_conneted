@@ -1,3 +1,5 @@
+import user from "../model/user"
+import bcrypt from bcrypt
 const users = require('express').Router
 const db = "../loginmodel"
 const {user}= db
