@@ -32,7 +32,7 @@
 
 <hr> -->
 
-<p align="center">
+<p align ="center">
   <a href="#dart-about">About</a> &#xa0; | &#xa0; 
   <a href="#sparkles-features">Features</a> &#xa0; | &#xa0;
   <a href="#rocket-technologies">Technologies</a> &#xa0; | &#xa0;
@@ -90,10 +90,10 @@ $ npm install react-bootstrap bootstrap
 # The server will initialize in the <http://localhost:3000>
 ```
 
-Made with :skull: by <a href="https://github.com/CodyCork" target="_blank">Cody Cork</a>
-Made with :skull: by <a href="https://github.com/Fallangel666" target="_blank">Sam Hughes</a>
-Made with :skull: by <a href="https://github.com/Balthi3r" target="_blank">Jose Rodriguez</a>
-Made with :skull: by <a href="https://github.com/{{YOUR_GITHUB_USERNAME}}" target="_blank">{{YOUR_NAME}}</a>
+Made by :skull: by <a href="https://github.com/CodyCork" target="_blank">Cody Cork</a>
+Made by :skull: by <a href="https://github.com/Fallangel666" target="_blank">Sam Hughes</a>
+Made by :skull: by <a href="https://github.com/Balthi3r" target="_blank">Jose Rodriguez</a>
+Made by :skull: by <a href="https://github.com/{{YOUR_GITHUB_USERNAME}}" target="_blank">{{YOUR_NAME}}</a>
 
 &#xa0;
 
