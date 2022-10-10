@@ -24,7 +24,7 @@ const userSchema= Sequelize.Schema(
         profilepicture : String,
         coverpicture: String,
         about:String,
-        experience: string,
+        email: String,
         },
     
 )
