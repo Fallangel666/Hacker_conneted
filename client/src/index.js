@@ -4,28 +4,26 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "./Layout.js";
 import About from "./About.js";
 import Search from "./Search.js";
-import Home from "./Home.js"
-import Login from "./Login.js"
+import App from "./App.js";
+import Login from "./Login.js";
 import Signup from "./Signup.js";
+import React from "react";
 
-
-export default function App() {
-  return(
-  <BrowserRouter>
+export default function Website() {
+  return (
+    <BrowserRouter>
       <Routes>
         <Route path="/" element={<Layout />}>
-          <Route index element={<Home />} />
+          <Route index element={<App />} />
           <Route path="about" element={<About />} />
           <Route path="search" element={<Search />} />
-          <Route path="login" element={<Login />}/>
-          <Route path="signup" element={<Signup />}/>
+          <Route path="login" element={<Login />} />
+          <Route path="signup" element={<Signup />} />
         </Route>
       </Routes>
     </BrowserRouter>
-);
-  }
- 
- 
+  );
+}
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<App />);
+root.render(<Website />);

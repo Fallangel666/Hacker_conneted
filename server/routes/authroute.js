@@ -1,9 +1,9 @@
-import  Express  from "express";
+const Express=  require("express");
 //register user imprt
-import {registerUSer} from "../controller/authcon.js"
+const {registerUser} =require("../controller/authcon.js")
 
 const router =express.Router()
 
-router.post('/register', registerUSer)
-router.post('login', loginUser)
+router.post('/register', registerUser)
+router.post('/login', loginUser)
 export default router

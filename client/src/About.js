@@ -1,9 +1,8 @@
-import { Navbar } from "react-bootstrap";
-import NavBar from "./Navbar.jsx"
+import NavBar from "./Navbar.jsx";
 function About() {
   return (
-    <div className="Home">
-      <header className="home-header">
+    <div className="App">
+      <header className="App-header">
         <div id="navbar">
           <NavBar />
         </div>

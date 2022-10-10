@@ -10,7 +10,9 @@ import "./App.css";
 function NavBar() {
   return (
     <Navbar bg="light" expand="lg">
-      <a href="/"><img src="/hackerclogo.jpg" alt="hacker logo"></img></a>
+      <a href="/">
+        <img src="/hackerclogo.jpg" alt="hacker logo"></img>
+      </a>
       <Container>
         <Navbar.Brand className="title">Hackers Connected</Navbar.Brand>
 
