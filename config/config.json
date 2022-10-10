@@ -1,9 +1,9 @@
 {
   "development": {
-    "username": "root",
+    "username": "postgres",
     "password": "Lovedev123",
     "database": "hacker-conneted",
-    "host": "127.0.0.1",
+    "host": "pgadminhacker.cywuyft184o9.us-east-2.rds.amazonaws.com",
     "dialect": "postgres"
   },
   "test": {

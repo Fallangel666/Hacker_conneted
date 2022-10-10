@@ -1,31 +1,3 @@
-<<<<<<< HEAD
-const posts = require('express').Router()
-const { Post, MeetGreet, Event, SetTime } = db
-const { Op } = require('sequelize')
-
-
-// FIND ALL POST
-posts.get('/', async (req, res) => {
-    try {
-        const foundPost = await Post.findAll({
-            order: [['available_start_time', 'ASC']],
-            where: {
-                name: { [Op.like]: `%${req.query.name ? req.query.name : ''}%` }
-            }
-        })
-        res.status(200).json(foundBands)
-    } catch (error) {
-        res.status(500).json(error)
-    }
-})
-
-
-
-
-
-
-
-=======
 /*import post from "../loginmodel/post.js";
 import { Sequelize } from "sequelize";
 import { BADNAME } from "dns";*/
@@ -33,7 +5,6 @@ const posts = require('express').Router
 const db = require('../loginmodel')
 const {post, user}=db
 const {Op}= require('sequelize')
->>>>>>> d937307ae2452f37c6279ddfbd421cd377ff06e5
 
 
 //create
