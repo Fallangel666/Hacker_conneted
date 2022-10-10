@@ -12,11 +12,11 @@ module.exports = {
         allowNull: false,
       },
       likes: {
-        type: Sequelize.TEXT,
+        type: Sequelize.INTEGER,
         allowNull: false,
       },
       image: {
-        type: Sequelize.DATE,
+        type: Sequelize.STRING,
         allowNull: false,
       },
     }
