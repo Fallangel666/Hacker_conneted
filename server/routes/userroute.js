@@ -1,9 +1,10 @@
-import express from "express";
-import {deleteUser, getuser, updateUser} from "../controller/usercon.js"
+const express = require("express");
+const {deleteUser, getuser, updateUser} =require("../controller/usercon.js")
 
 const router= express.Router();
 
 router.get('/:id', getuser)
+router.get('/', getAlluser)
 router.put('/:id', updateUser)
 router.delete('/id',deleteUser)
 
