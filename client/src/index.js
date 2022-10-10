@@ -7,6 +7,7 @@ import Search from "./Search.js";
 import App from "./App.js";
 import Login from "./Login.js";
 import Signup from "./Signup.js";
+import React from "react";
 
 export default function Website() {
   return (
