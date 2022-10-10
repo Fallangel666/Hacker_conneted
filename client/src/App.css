@@ -3,7 +3,7 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-#Home {
+#App {
   min-height: 1000px;
   max-height: 2000px;
   min-width: 500px;
@@ -17,7 +17,7 @@ body {
   background-color: #454955;
 }
 
-.home-header {
+.App-header {
   background-color: #a9fbd7;
   margin-left: 5%;
   margin-right: 5%;
@@ -46,7 +46,7 @@ body {
   width: 360px;
   height: 720px;
   margin: auto;
-  background-color: white;
+  padding-top: 100px;
   border-radius: 3px;
 }
 
@@ -85,7 +85,6 @@ form input {
   border: 1px solid gray;
   border-radius: 6px;
   outline: none;
-  
 }
 input[type="button"] {
   width: 300px;
@@ -93,8 +92,13 @@ input[type="button"] {
   margin-top: 20px;
   border: none;
   background-color: #49c1a2;
-  color: white;
+  color: gray;
   font-size: 18px;
+}
+
+input[type="button"]:hover {
+  color: black;
+  background-color: #60b8a2;
 }
 p {
   text-align: center;
@@ -112,3 +116,6 @@ p {
   color: #49c1a2;
 }
 
+#para-3 {
+  margin-top: 30px;
+}

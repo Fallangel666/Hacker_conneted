@@ -4,10 +4,10 @@ import NavBar from "./Navbar.jsx";
 // const React = require("react")
 // const Def = require('./default')
 
-function Home() {
+function App() {
   return (
-    <div className="Home">
-      <header className="home-header">
+    <div className="App">
+      <header className="App-header">
         <div id="navbar">
           <NavBar />
         </div>
@@ -23,4 +23,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default App;

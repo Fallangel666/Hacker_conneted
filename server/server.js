@@ -1,5 +1,5 @@
 import express from "express";
-import bodyParser from 'body-parser';
+import bodyParser from "body-parser";
 //sql import
 import dotenv from "dotenv";
 import authroute from './routes/authroute.js'
@@ -9,21 +9,23 @@ import
 //routes
 
 const app = express();
-const PORT = process.env.PORT
+const PORT = process.env.PORT;
 //midware
 app.use(express.json())
 app.use(express.urlencoded({ extended: false }))
 
 
-dotenv.config()
+dotenv.config();
 
 //sqldb goes here
 
 //import { alignPropType } from "react-bootstrap/esm/types";
 
 //toute usage
-app.use('/auth', authroute)
-app.use('/user', userroute)
-app.use('/post', postroute)
+app.use("/auth", authroute);
+app.use("/user", userroute);
+app.use("/post", postroute);
 
-app.listen(process.env.PORT, () =>)
+app.listen(PORT, () => {
+  console.log("Running on PORT 3001");
+});
