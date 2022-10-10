@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Fallangel666/Hacker_conneted/static/css/main.f57ca17a.css",
+    "main.js": "/Fallangel666/Hacker_conneted/static/js/main.6a517d90.js",
+    "index.html": "/Fallangel666/Hacker_conneted/index.html",
+    "main.f57ca17a.css.map": "/Fallangel666/Hacker_conneted/static/css/main.f57ca17a.css.map",
+    "main.6a517d90.js.map": "/Fallangel666/Hacker_conneted/static/js/main.6a517d90.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f57ca17a.css",
+    "static/js/main.6a517d90.js"
+  ]
+}
