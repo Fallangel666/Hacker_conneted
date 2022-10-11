@@ -2,10 +2,7 @@ const express = require("express");
 const cors = require("cors")  // install cors
 const bodyParser = require("body-parser");
 var dateFormat = require('dateformat');
-//sql import
-// import dotenv from "dotenv";
-// import authroute from './routes/authroute.js'
-// import userroute from  '../routes/userroute.js'
+
 
 const app = express();
 app.set("port", 3001);

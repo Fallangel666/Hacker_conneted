@@ -1,7 +1,7 @@
 const express= require('express');
 const { Model, Sequelize } = require('sequelize');
 const router = express.Router();
-const userController = require('../controller/usercon')
+const usercon = require('../controller/usercon')
 
 const userSchema= Sequelize.Schema(
     {
@@ -28,8 +28,5 @@ const userSchema= Sequelize.Schema(
         },
     
 )
-
-//sql cosnt
-
 
 Model.exports = router;

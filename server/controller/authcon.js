@@ -1,7 +1,5 @@
 const usercon = require("../loginmodel/user.js")
-import usercon from "../model/user.js"
 
-//place form in here
 const registerUser= async (req,res)=>{
     const{username,password,firstname, lastname}= req.body
 

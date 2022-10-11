@@ -37,11 +37,5 @@ module.exports = (sequelize, DataTypes) => {
     });
         return Post
     }
-        
-
-    
-
-//sql cosnt
-
 
 Model.exports = router;
