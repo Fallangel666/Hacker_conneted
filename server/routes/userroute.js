@@ -8,4 +8,5 @@ router.get('/', getAlluser)
 router.put('/:id', updateUser)
 router.delete('/id',deleteUser)
 
+module.exports= router
 export default router;
